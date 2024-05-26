@@ -15,11 +15,11 @@ function Home1() {
         dispatch(logout());
         navigate('/');
     };
-
+    console.log('User object:', user);
     return (
         <div>
             <h4 className="home-page-header">
-                Welcome {user.username}
+                Welcome {user.user.username}
                 <button className='flex-end' onClick={handleLogout}>LogOut</button>
             </h4>
             <AddAppForm />

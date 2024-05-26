@@ -3,7 +3,7 @@ import AddAppPropTable from "./AddAppPropTable";
 import { useDispatch, useSelector } from "react-redux";
 import { webClient } from "../util/config";
 import { API } from "../util/constants";
-import { updateUser } from "../redux/slice/userSlice";
+import { login, logout } from '../redux/slice/userSlice'; 
 
 const AddApp = () => {
   const [app, saveApp] = useState({
